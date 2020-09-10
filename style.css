@@ -116,21 +116,13 @@ nav li a {
     color: #e1e2e3;
 }
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
+
 .dropdown-menu {
     position: absolute;
     width: 200px;
     color: white;
     background-color: #504741;
-<<<<<<< Updated upstream
-    /* visibility: hidden; */
-=======
     visibility: hidden;
->>>>>>> Stashed changes
 }
 
 .dropdown-menu li {
@@ -145,19 +137,10 @@ nav li a {
     text-align: left;
 }
 
-<<<<<<< Updated upstream
-.dropdown-icon:hover .dropdown-menu  {
-    width: 400px;
-    /* visibility: visible; */
-}
-
-=======
-.dropdown-icon:hover ul  {
+.trigger:hover ul  {
     visibility: visible;
 }
 
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 
 /* Content */
 
