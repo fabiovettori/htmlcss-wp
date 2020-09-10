@@ -67,7 +67,7 @@ header h2 {
 
 nav {
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #504741;
     margin-bottom: 25px;
 }
 
@@ -96,8 +96,8 @@ nav li:hover {
 }
 
 nav li:nth-child(even) {
-    border-left: 1px darkgrey solid;
-    border-right: 1px darkgrey solid;
+    border-left: 1px solid rgba(0, 0, 0, .4);
+    border-right: 1px solid rgba(0, 0, 0, .4);
 }
 
 nav li a {
@@ -108,12 +108,37 @@ nav li a {
     color: #e1e2e3;
 }
 
-.dropdown::after {
+.dropdown-icon::after {
     content: "\276F";
     margin-left: 10px;
     display: inline-block;
     transform: rotateZ(90deg);
     color: #e1e2e3;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 200px;
+    color: white;
+    background-color: #504741;
+    /* visibility: hidden; */
+}
+
+.dropdown-menu li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .4);
+}
+
+.dropdown-menu li a {
+    text-transform: capitalize;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-icon:hover .dropdown-menu  {
+    width: 400px;
+    /* visibility: visible; */
 }
 
 
