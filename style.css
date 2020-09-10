@@ -1,0 +1,377 @@
+/* General settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://organicthemes.com/demo/natural-lite/wp-content/themes/natural-lite/images/default-pattern.png");
+    background-blend-mode: multiply;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #99cc33;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    margin: 25px 16%;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 220px;
+    padding: 10px;
+    border: 12px solid white;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url('hero.jpg');
+    background-color: rgba(98, 88, 88, 0.3);
+    background-blend-mode: multiply;
+    background-position: 300px -150px;
+}
+
+header > div {
+    position: relative;
+    height: 50%;
+    top: 100px;
+    transform: translateY(-50px);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+
+/* Navigation menu */
+
+nav {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+}
+
+nav > ul {
+    width: 500px;
+    margin: auto;
+}
+
+nav > ul::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav li {
+    list-style: none;
+    text-align: center;
+    float: left;
+    font-size: 12px;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav li:nth-child(even) {
+    border-left: 1px darkgrey solid;
+    border-right: 1px darkgrey solid;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #e1e2e3;
+}
+
+.dropdown::after {
+    content: "\276F";
+    margin-left: 10px;
+    display: inline-block;
+    transform: rotateZ(90deg);
+    color: #e1e2e3;
+}
+
+
+/* Content */
+
+aside.left, aside.right {
+    width: calc(25% - 12.5px);
+    float: left;
+}
+
+.lft, .rht {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.2);
+    text-transform: capitalize;
+    padding: 30px 20px;
+}
+
+.archives {
+    margin: 25px 0;
+}
+
+.lft li {
+    list-style: none;
+    height: 35px;
+}
+
+.lft li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+.lft li a:hover {
+    background-color: rgba(0, 0, 0, .04);
+    box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
+}
+
+
+.left h3, .right h3 {
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+main {
+    width: calc(50% - 25px);
+    margin: 0 25px;
+    float: left;
+}
+
+article {
+    padding: 20px 0 0;
+    color: #504741;
+    background-color: white;
+}
+
+article > :not(img) {
+    margin: 0 30px;
+}
+
+
+article h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.fa-calendar-alt, .fa-comment, .fa-bars, .fa-tags {
+    margin-right: 5px;
+    color: rgba(153, 153, 153, 1);
+}
+
+article img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+article h3, article h4, article h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+article h3 {
+    color: #666666;
+    margin-bottom: 50px;
+}
+
+.breadcrumbs {
+    background-color: rgba(153, 153, 153, 0.08);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.breadcrumbs > * {
+    font-size: 1em;
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+.breadcrumbs h5 span:last-of-type {
+    margin-left: 20px;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rht {
+    margin-bottom: 25px;
+}
+
+.rht input {
+    float: left;
+    height: 40px;
+    width: 70%;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.rht input::placeholder {
+    font-size: 16px;
+}
+
+.rht button {
+    width: calc(30% - 10px);
+    height: 40px;
+    margin-left: 10px;
+    float: left;
+    background-color: #706760;
+    color: lightgrey;
+}
+
+.rht a {
+    display: inline-block;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: lowercase;
+}
+
+#tag-important {
+    font-size: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: lightblue;
+    float: left;
+    margin-top: 25px;
+    padding: 2px;
+
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: capitalize;
+
+    background-color: white;
+    padding: 30px;
+}
+
+.footer-top a, .footer-bottom a {
+    color: rgba(0, 0, 0, .35);
+}
+
+.footer-top ul:nth-of-type(2){
+    margin: 0 20px;
+}
+
+.footer-top ul:last-of-type {
+    margin-left: 20px;
+}
+
+.footer-top li p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+footer li, footer li a {
+    list-style: none;
+    color: #504741;
+    line-height: 35px;
+}
+
+.footer-top li a {
+    line-height: 35px;
+}
+
+.hover:hover {
+    background-color: rgba(0, 0, 0, .04);
+    box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
+}
+
+.footer-top li h3 {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #504741;
+}
+
+footer ul {
+    float: left;
+    width: 20%;
+}
+
+footer ul:last-of-type {
+    width: calc(40% - 60px);
+}
+
+.footer-top {
+    margin-bottom: 50px;
+}
+
+.footer-top::after {
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    height: 200px;
+}
+
+.footer-bottom div:first-child{
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;;
+}
+
+.footer-bottom div:last-child{
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-bottom .fab, .footer-bottom .fas {
+    display: inline-block;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #444444;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .06);
+    margin: 0px 5px;
+}
